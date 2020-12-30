@@ -6,7 +6,8 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
+    //   once we changed "dist" to "./dist" it worked
+    path: path.resolve(__dirname, "./dist"),
   },
   module: {
     rules: [

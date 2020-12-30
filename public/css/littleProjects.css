@@ -1,0 +1,68 @@
+/* fonts */
+/* 
+    font-family: 'Cinzel', serif;
+    font-family: 'PT Serif', serif;
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+}
+
+body {
+  padding: 1.5em;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+  color: #414141;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+header,
+.subtitle {
+  font-family: "Cinzel", serif;
+}
+
+.title {
+  font-size: 4rem;
+  line-height: 0.8em;
+  color: #414141;
+  font-weight: 900;
+}
+.header {
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.subtitle {
+  color: #7d7d7d;
+  font-size: 1.5rem;
+  line-height: 1em;
+  margin: 1em 0 0 0;
+  font-weight: 200;
+  padding: 0 4em;
+}
+.container {
+  font-family: "PT Serif", serif;
+  width: 90%;
+  max-width: 39rem;
+  margin: 0 auto;
+}
+
+.lead {
+  margin: 2.7em 0 1em 0;
+  font-size: 1.3125rem;
+}
+
+a[href] {
+  color: #ca5e10;
+}
+
+p {
+  margin: 1em 0 0 0;
+  padding: 0 15%;
+}
