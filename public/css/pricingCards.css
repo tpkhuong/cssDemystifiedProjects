@@ -1,0 +1,29 @@
+:root {
+  /* colors */
+  --base: #4e4e4e;
+  --light: #e5e3e8;
+  --lighter: #fafafa;
+  --white: #fff;
+  --primary-grad: #3741a0;
+  /* typography */
+  --font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+  --fw-light: 300;
+  --fw-med: 400;
+  --fw-heavy: 700;
+  /* headings */
+  /* 
+    - Heading: 40px
+- Subhead: 21px
+- Card title: 18px
+- Price: 48px - 25px
+- Description: 16px
+- Button: 14px
+    */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
