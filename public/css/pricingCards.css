@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
 :root {
   /* colors */
   --base: #4e4e4e;
-  --light: #e5e3e8;
-  --lighter: #fafafa;
+  --light: #c3c0c7;
+  --lighter: #ecebeb;
   --white: #fff;
   --primary-grad: #3741a0;
+  --accent-base: #0790a8;
+  --accent-dark: #114243;
   /* typography */
   --font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
   --fw-light: 300;
@@ -26,4 +30,100 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  text-align: center;
+  line-height: 1.5;
+}
+/* .pricing {
+  font-family: var(--font-family);
+  text-align: center;
+} */
+
+h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: var(--fw-heavy);
+  color: var(--accent-base);
+}
+
+.pricing {
+  margin: 2em auto 1em;
+}
+
+.cards {
+  display: flex;
+  width: 50rem;
+  margin: 2em auto 0 auto;
+  gap: 1.3em;
+  /* justify-content: space-between; */
+}
+
+.card {
+  /* background: var(--lighter); */
+  background: rgb(239, 236, 242);
+  background: linear-gradient(
+    290deg,
+    rgba(239, 236, 242, 1) 3%,
+    rgba(231, 229, 233, 1) 6%
+  );
+  padding: 1.8em;
+  border-radius: 0.5em;
+  transition: transform 0.5s linear, box-shadow 0.5s linear;
+}
+
+.card:hover {
+  transform: translateY(-1em);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.card__pricing-title {
+  text-transform: uppercase;
+  font-weight: var(--fw-heavy);
+}
+
+.card__pricing {
+  line-height: 1;
+  margin: 0.5em 0;
+  font-size: 2.5rem;
+  /* color: inherit; */
+}
+
+.lightbold {
+  display: block;
+  text-transform: none;
+  font-weight: var(--fw-light);
+  font-size: 1.6rem;
+}
+
+.btn {
+  margin: 1.7em 0 0 0;
+  padding: 0.6em 0.8em;
+  outline: #e5e3e8;
+  border-radius: 0.5em;
+  border-width: 0;
+  text-transform: uppercase;
+  font-weight: var(--fw-heavy);
+}
+
+.card--highlight {
+  color: var(--white);
+  background: rgb(33, 122, 124);
+  background: linear-gradient(
+    153deg,
+    rgba(55, 65, 160, 1) 10%,
+    rgba(33, 122, 124, 1) 90%
+  );
+}
+
+.card--highlight .card__pricing {
+  color: inherit;
+}
+
+.btn--dark {
+  background: var(--base);
+  color: var(--white);
 }
