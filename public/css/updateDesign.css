@@ -10,10 +10,16 @@
 }
 
 :root {
-  --Base: #4e4e4e;
-  --Light: #e5e3e8;
-  --Lighter: #fafafa;
-  --White: #fff;
+  --clr-primary-400: #00a1ab;
+  --clr-primary-500: #3741a0;
+
+  --clr-accent-400: #00cdac;
+  --clr-accent-500: #114243;
+
+  --clr-neutral-100: #fff;
+  --clr-neutral-200: #fafafa;
+  --clr-neutral-300: #e5e3e8;
+  --clr-neutral-400: #4e4e4e;
 }
 /* ///////////////
   General styling
