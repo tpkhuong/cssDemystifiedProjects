@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;700&display=swap");
+:root {
+  --clr-base-400: #5e5e5e;
+  --clr-base-500: #494949;
+
+  --clr-ui-300: #f8e2ff;
+  --clr-ui-400: #580d3a;
+  --clr-ux-300: #e2ffea;
+  --clr-ux-400: #115926;
+  --clr-dev-300: #e2fcff;
+  --clr-dev-400: #024f4f;
+
+  --clr-accent-400: #7e47c5;
+
+  --ff-accent: "Podkova", serif;
+  --ff-base: "Open Sans", sans-serif;
+
+  --fs-300: 0.75rem;
+  --fs-400: 1rem;
+  --fs-500: 2rem;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  --border-radius: 0.75rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-base);
+  line-height: 1.4;
+  color: var(--clr-base-400);
+}
+
+.candidates {
+  max-width: 70em;
+  margin: 0 auto;
+  display: grid;
+  gap: 2em;
+  padding: 2em;
+  /* place-content: center; */
+  /* grid-template-columns: 1fr; */
+}
+
+/* specific styles */
+
+.ui {
+  --bg: var(--clr-ui-300);
+  --fg: var(--clr-ui-400);
+}
+.ui {
+  --bg: var(--clr-ux-300);
+  --fg: var(--clr-ux-400);
+}
+.dev {
+  --bg: var(--clr-dev-300);
+  --fg: var(--clr-dev-400);
+}
+
+/* layout */
+.candidate {
+  --bg: var(--clr-accent-400);
+  --fg: #fff;
+  /* width: 35em; */
+  background: #fff;
+  display: grid;
+  padding: 0.8em;
+  column-gap: 0.5em;
+  border-radius: var(--border-radius);
+  font-family: var(--ff-accent);
+  /* our grid is not responsive at smaller size because we have our info(name,roles,description) in a container */
+  grid-template-columns: min-content minmax(15em, 22em);
+  /* would be better using min-content if each candidate name,roles, description were not grouped in a container 
+  min-content and 1fr is the container of our candidate name,roles and description.
+  */
+  grid-template-rows: min-content 1fr auto;
+  grid-template-areas:
+    "img info"
+    "img info"
+    "social-list hire-btn";
+  box-shadow: var(--shadow);
+  /* with grid and flex items we can use margin auto we center things. the parent of these .candiate elements has display: grid declared*/
+  margin: 0 auto;
+}
+
+.candidate > img {
+  border-radius: var(--border-radius);
+}
+
+.candidate .name {
+  font-size: 2rem;
+  color: var(--clr-base-500);
+  line-height: 1;
+}
+
+.candidate .roles {
+  line-height: 1;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-700);
+  margin-top: 1em;
+}
+
+.candidate .short-intro {
+  margin: 1em 0 0 0;
+  font-size: 1.2rem;
+}
+
+.candidate span {
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  background: var(--bg, lightgrey);
+  color: var(--fg, #333);
+}
+
+img {
+  grid-area: img;
+  display: block;
+  /* width: 100%; */
+}
+
+.info {
+  grid-area: info;
+}
+
+.social-list {
+  grid-area: social-list;
+}
+/* .social-hire {
+  --bg: var(--clr-accent-400);
+  --fg: #fff;
+
+  grid-area: social-hire;
+  display: flex;
+} */
+
+.social-icons {
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  list-style-type: none; /* remove bullets */
+}
+
+.social-icons::before {
+  content: "\200B"; /* add zero-width space */
+}
+
+.button {
+  grid-area: hire-btn;
+  margin-left: auto;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.8em 2.3em;
+  letter-spacing: 0.1em;
+  font-weight: var(--fw-700);
+  font-family: var(--ff-base);
+  border: none;
+  border-radius: var(--border-radius);
+  background: var(--bg);
+  color: var(--fg);
+  cursor: pointer;
+}
+
+.candidate a:hover {
+  opacity: 0.5;
+}
+
+.icons:not(:nth-of-type(3)) {
+  color: red;
+  margin-right: 1.5em;
+}
+
+@media screen and (min-width: 1150px) {
+  .candidates {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
