@@ -56,13 +56,16 @@ img {
 }
 
 .fg-accent {
-  --fg: var(--clr-accent-400);
+  --fg-heading: var(--clr-accent-400);
 }
 
-.bg-light {
+.fg-light {
+  --fg: #fff;
 }
 
-.bg-dark {
+.fg-dark {
+  --fg: var(--clr-neutral-700);
+  /* color: inherit; */
 }
 
 /* general styling */
@@ -85,7 +88,7 @@ h1 span {
 }
 h2 {
   background: var(--bg, inherit);
-  color: var(--fg, inherit);
+  color: var(--fg-heading, inherit);
 }
 
 .btn {
@@ -143,22 +146,39 @@ h2 {
   background: var(--clr-neutral-700);
 }
 
-.sales-container > div {
+.inner-container > div {
   margin: 0.5em 0 0 0;
+  color: var(--fg, #fff);
 }
 
-.sales-content-container {
+.outer-container {
   width: 50em;
   margin: 0 auto;
   padding: 5em 0;
 }
 
-.sales-container {
-  color: #fff;
+.inner-container {
+  /* color: #fff; */
   display: flex;
   gap: 2em;
 }
 
-.sales-content-container h2 {
+.sales-point h2 {
   font-size: 2.3rem;
+}
+
+.access-library .inner-container > div {
+  position: relative;
+}
+
+.background-square {
+  width: 3em;
+  height: 3em;
+  background: var(--clr-accent-400);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  transform: translate(-0.4em, -0.3em);
+  z-index: -10;
 }
