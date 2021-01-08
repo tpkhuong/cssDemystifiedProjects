@@ -51,6 +51,15 @@ img {
 }
 /* utilities classes */
 
+.text-accent {
+  --fg: var(--clr-accent-400);
+}
+
+.bg-dark {
+  --bg: var(--clr-neutral-900);
+  --fg: --clr;
+}
+
 /* layout */
 
 /* general styling */
