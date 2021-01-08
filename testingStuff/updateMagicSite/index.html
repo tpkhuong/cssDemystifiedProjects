@@ -7,62 +7,67 @@
     <meta name="description" content="Learning Nodejs" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="ourStyle.css" />
     <title></title>
   </head>
   <body>
     <header role="banner">
-      <ul class="main-nav">
-        <li><a class="links" href="#">Home</a></li>
-        <li><a class="links" href="#">About</a></li>
-        <li><a class="links" href="#">Testimonials</a></li>
-      </ul>
+      <nav role="navigation">
+        <ul class="main-nav">
+          <li><a class="links" href="#">Home</a></li>
+          <li><a class="links" href="#">About</a></li>
+          <li><a class="links" href="#">Testimonials</a></li>
+        </ul>
+      </nav>
     </header>
     <section class="hero">
       <div class="container">
-        <article class="inner-container">
-          <div class="hero__text">
-            <p>Start learning magic today</p>
-            <h2>
-              Books hard to follow, and YouTube letting you down? Learn magic
-              the right way.
+        <article class="inner-container split align-center">
+          <div class="hero__text flow-content">
+            <p class="section-title bg-accent--dark">
+              Start learning magic today
+            </p>
+            <h2 class="hero-title">
+              Books hard to follow, and YouTube letting you down?
+              <strong> Learn magic the right way. </strong>
             </h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              placerat, ipsum ac auctor ornare, nunc ligula scelerisque eros.
+              Lorem ipsum dolor sit
+              <a href="#">amet, consectetur adipiscing</a> elit. Donec placerat,
+              ipsum ac auctor ornare, nunc ligula scelerisque eros.
             </p>
-            <a href="" class="btn">Start Learning</a>
+            <a href="" class="btn bg-accent">Start Learning</a>
           </div>
           <div class="hero__img">
             <img
-              src=""
+              src="assets/hero.jpg"
               alt="Man in black hoodie with a deck of card between two hands"
             />
           </div>
         </article>
       </div>
     </section>
-    <section class="sales-point">
+    <section class="sales-point bg-dark">
       <div class="container">
-        <article class="inner-container">
+        <article class="split flow-content">
           <h2>Start mastering magic today</h2>
-          <div>
-            <img src="" alt="" />
+          <div class="flow-content">
+            <img src="assets/feature-01.jpg" alt="" />
             <h3>Feeling stuck?</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div class="flow-content">
+            <img src="assets/feature-02.jpg" alt="" />
             <h3>Stop with the excuses</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div class="flow-content">
+            <img src="assets/feature-03.jpg" alt="" />
             <h3>Unlock your potential</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div class="flow-content">
+            <img src="assets/feature-04.jpg" alt="" />
             <h3>Get in the game</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
@@ -71,55 +76,63 @@
     </section>
     <section class="access">
       <div class="container">
-        <article class="inner-container">
-          <h2></h2>
-          <div>
-            <img src="" alt="" />
+        <article class="split flow-content">
+          <h2>Join now and get access to our entire library of tricks</h2>
+          <div class="flow-content">
+            <img src="assets/all-access-03.jpg" alt="" />
             <h3>Step-by-step instruction</h3>
             <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div class="flow-content">
+            <img src="assets/all-access-04.jpg" alt="" />
             <h3>1-on-1 mentoring</h3>
             <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div class="flow-content">
+            <img src="assets/all-access-01.jpg" alt="" />
             <h3>Video lessons</h3>
             <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div class="flow-content">
+            <img src="assets/all-access-02.jpg" alt="" />
             <h3>Full routines</h3>
             <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
           </div>
         </article>
       </div>
     </section>
-    <section class="CTA">
-      <div class="container">
-        <article class="inner-container">
-          <p>Start learning magic today</p>
-          <h2>You’re only one step away</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            placerat, ipsum ac auctor ornare.
-          </p>
-          <a href="" class="btn">Start learning</a>
-        </article>
-      </div>
+    <section class="CTA bg-accent">
+      <div class="container"></div>
+      <article class="split align-center flow-content flow-content--large">
+        <p class="section-title bg-dark">Start learning magic today</p>
+        <h2>You’re only one step away</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          placerat, ipsum ac auctor ornare.
+        </p>
+        <a href="" class="btn bg-light">Start learning</a>
+      </article>
     </section>
     <section class="testimonials">
       <div class="container">
-        <article class="inner-container">
-          <p>Testimonials</p>
+        <article class="align-center flow-content flow-content--large">
+          <p class="section-title bg-accent--dark">Testimonials</p>
           <h2>Others have done it, so can you!</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             placerat, ipsum ac auctor ornare, nunc ligula scelerisque eros.
           </p>
-          <div>
-            <div>
+          <div class="split flow-content flow-content--large">
+            <div class="testimonial bg-dark">
+              <p>
+                Commodo risus non cursus risus, metus, velit scelerisque urna,
+                aenean leo diam arcu sed arcu purus sagittis posuere orci ornare
+                lorem risus malesuada nec sit
+              </p>
+              <p class="name text-accent">John Smith</p>
+              <p class="position">CEO of Company</p>
+            </div>
+            <div class="testimonial bg-accent">
               <p>
                 Commodo risus non cursus risus, metus, velit scelerisque urna,
                 aenean leo diam arcu sed arcu purus sagittis posuere orci ornare
@@ -128,38 +141,31 @@
               <p class="name">John Smith</p>
               <p class="position">CEO of Company</p>
             </div>
-            <div>
+            <div class="testimonial bg-dark">
               <p>
                 Commodo risus non cursus risus, metus, velit scelerisque urna,
                 aenean leo diam arcu sed arcu purus sagittis posuere orci ornare
                 lorem risus malesuada nec sit
               </p>
-              <p class="name">John Smith</p>
-              <p class="position">CEO of Company</p>
-            </div>
-            <div>
-              <p>
-                Commodo risus non cursus risus, metus, velit scelerisque urna,
-                aenean leo diam arcu sed arcu purus sagittis posuere orci ornare
-                lorem risus malesuada nec sit
-              </p>
-              <p class="name">John Smith</p>
+              <p class="name text-accent">John Smith</p>
               <p class="position">CEO of Company</p>
             </div>
           </div>
         </article>
       </div>
     </section>
-    <section class="CTA">
+    <section class="CTA-last bg-light">
       <div class="container">
-        <article class="inner-container">
-          <p>Start learning magic today</p>
+        <article class="split align-center flow-content flow-content--large">
+          <p class="section-title bg-accent--dark">
+            Start learning magic today
+          </p>
           <h2>Step up your game TODAY!</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             placerat, ipsum ac auctor ornare, nunc ligula scelerisque eros.
           </p>
-          <a href="" class="btn">Start learning</a>
+          <a href="" class="btn bg-accent">Start learning</a>
         </article>
       </div>
     </section>
