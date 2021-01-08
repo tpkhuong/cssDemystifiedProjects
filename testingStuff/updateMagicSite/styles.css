@@ -101,6 +101,10 @@ p {
   --fg: var(--clr-neutral-900);
 }
 
+.corner-dark {
+  --corner-bg: var(--clr-neutral-900);
+}
+
 .flow-content > * + * {
   margin-top: var(--flow-space, var(--spacer));
 }
@@ -110,6 +114,10 @@ p {
 }
 .align-center {
   align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* layout */
@@ -125,6 +133,11 @@ section {
 .split {
   display: flex;
   flex-flow: column;
+}
+
+.sales-point article,
+.access article {
+  margin-top: 2em;
 }
 
 /* general styling */
@@ -146,16 +159,16 @@ section {
   color: var(--fg, --clr-neutral-900);
 }
 
+.hero__img img {
+  box-shadow: var(--box-shadow);
+}
+
 .section-title {
   background: var(--bg);
   color: var(--fg);
   text-transform: uppercase;
   font-weight: var(--fw-700);
   padding: 0.1em 0.5em;
-}
-
-.hero .section-title,
-.testimonials .section-title {
   display: inline-block;
 }
 
@@ -211,7 +224,11 @@ header {
 }
 
 /* general layout */
-
+@media screen and (min-width: 40em) {
+  .split {
+    flex-flow: row nowrap;
+  }
+}
 /* individual sections */
 
 .CTA {
@@ -224,4 +241,21 @@ header {
   background-image: url("assets/cta-bg-2.jpg");
   background-size: cover;
   background-blend-mode: multiply;
+}
+
+div[class*="corner-square"] {
+  /* font-size: 5rem; */
+  position: relative;
+}
+
+.corner-square::before {
+  content: "";
+  width: 5em;
+  height: 5em;
+  background: var(--corner-bg, var(--clr-accent-400));
+  display: block;
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  z-index: -10;
 }
