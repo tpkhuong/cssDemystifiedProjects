@@ -226,7 +226,7 @@ header {
 /* general layout */
 @media screen and (min-width: 40em) {
   .split {
-    flex-flow: row nowrap;
+    flex-basis: 100%;
   }
 }
 /* individual sections */
