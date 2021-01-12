@@ -41,6 +41,10 @@ body {
   color: var(--clr-neutral-400);
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
 /* just testing stuff */
 
 .sticky-please {
@@ -78,6 +82,7 @@ body {
 }
 
 .split {
+  /* if we dont want other items to stretch we can use align-self: flex-start because the default value for align-items for flex item is stretch */
   display: flex;
   flex-flow: column nowrap;
   gap: 1em;
@@ -102,9 +107,26 @@ p {
   .split {
     flex-flow: row nowrap;
   }
+  /*
+  make sure when we use the col-1 or col-3 to control the flex-basis of the flex items. make sure we dont make one flex item 25% while the other flex item wants to be
+  100% because most flex items with our code will want to be 100% due to flex-basis: 100% declared with .split > * {flex-basis: 100%}
+  */
   .split > * {
+    /* the other flex-item property will be flex-grow: 0, flex-shrink: 1 */
     flex-basis: 100%;
   }
+
+  /* .col-1{
+    flex-basis: 25%;
+  }
+
+  .col-2{
+    flex-basis: 50%;
+  }
+
+  .col-3{
+    flex-basis: 75%;
+  } */
   /* .plan {
     flex-basis: 45%;
   } */
@@ -122,6 +144,9 @@ section {
 }
 
 .container {
+  /* this should just control our content 
+  when we need a container inside our div or nav or we we need a container.
+  */
   max-width: 60em;
   margin: 0 auto;
 }
@@ -141,9 +166,12 @@ h3 {
 /* components */
 
 .btn {
+  /* the outer roles is inline the inner role is block */
   display: inline-block;
   background: var(--fg, var(--clr-primary-400));
   color: var(--bg, var(--clr-neutral-100));
   padding: 0.5em 1.5em;
   font-weight: var(--fw-700);
 }
+
+/* display: inline-flex means outer role is inline inner role is flex. */
