@@ -29,11 +29,106 @@
   --clr-primary-400: #8ea8da;
 
   --br: 1rem;
+  --shadow: 0 0.25em 1.5em rgba(0, 0, 0, 0.15);
 }
+
+/* for headings decrease the line-height for paragraphs increase the space
+group the content together. increase the font-weight on the important content we want the user to focus on depends on the section.
+*/
 
 /* reset */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-400);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul[class],
+li[class] {
+  list-style: none;
+  padding: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* 
+.social-icons {
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  list-style-type: none; /* remove bullets 
+}
+*** need to use ::before on the <ul> add content: "\200B" so screen readers will read it. ***
+.social-icons::before {
+  content: "\200B"; /* add zero-width space
+}
+*/
+
 /* utilities */
+
+.flow-content > * + * {
+  margin: 1em 0 0 0;
+}
+
+[class*="bg-"] {
+  background: var(--bg, var(--clr-neutral-100));
+  color: var(--fg, var(--clr-neutral-900));
+}
+
+.bg-dark {
+  --bg: var(--clr-primary-400);
+  --fg: var(--clr-neutral-400);
+}
+
+.bg-light {
+  --bg: var(--clr-neutral-100);
+  --fg: var(var(--clr-neutral-500));
+}
+
+.h2 {
+  /* use media query to change for desktop size */
+  font-size: var(--fs-600);
+}
+
+.h3 {
+  font-size: var(--fs-300);
+}
 
 /* general styles */
 
