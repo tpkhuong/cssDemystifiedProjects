@@ -103,7 +103,19 @@ select {
 /* utilities */
 
 .flow-content > * + * {
-  margin: 1em 0 0 0;
+  margin: var(--large-top, var(--br)) 0 0 0;
+}
+
+.more-space-top {
+  --large-top: calc(var(--bg) * 3);
+}
+
+.flow-content-inline > * + * {
+  margin: 0 0 0 var(--gap, var(--bg));
+}
+
+.more-gap {
+  --gap: calc(var(--br) * 3);
 }
 
 [class*="bg-"] {
@@ -128,6 +140,15 @@ select {
 
 .h3 {
   font-size: var(--fs-300);
+}
+
+.columns {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.columns > * + * {
+  flex-basis: 100%;
 }
 
 /* general styles */
