@@ -14,15 +14,17 @@
     <header role="banner">
       <div><img src="img/logo.svg" alt="" /></div>
       <nav role="navigation">
-        <ul>
+        <ul class="header-nav">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a class="normal-font-weight" href="#">Blog</a></li>
         </ul>
       </nav>
     </header>
     <section role="region" class="hero">
       <article>
-        <h1>Lorem ipsum dolor sit amet, consectet adipiscing</h1>
+        <h1 class="primary-title">
+          Lorem ipsum dolor sit amet, consectet adipiscing
+        </h1>
         <p>
           Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna.
@@ -58,7 +60,7 @@
               />
               <h4>Lorem ipsum dolor sit amet, consectet adipiscing</h4>
               <p>Lorem ipsum dolor sit amet, consectet adipiscing</p>
-              <p><span>Oct 8</span>-<span>8 min read</span></p>
+              <p><span>Oct 8</span> - <span>8 min read</span></p>
             </div>
             <div class="blog__post">
               <img
@@ -67,7 +69,7 @@
               />
               <h4>Lorem ipsum</h4>
               <p>Lorem ipsum dolor sit amet, consectet adipiscing</p>
-              <p><span>Oct 8</span>-<span>8 min read</span></p>
+              <p><span>Oct 8</span> - <span>8 min read</span></p>
             </div>
             <div class="blog__post">
               <img
@@ -76,7 +78,7 @@
               />
               <h4>Lorem ipsum dolor sit amet, consectet adipiscing</h4>
               <p>Lorem ipsum dolor sit amet, consectet adipiscing</p>
-              <p><span>Oct 8</span>-<span>8 min read</span></p>
+              <p><span>Oct 8</span> - <span>8 min read</span></p>
             </div>
           </div>
         </article>
@@ -86,20 +88,22 @@
         <h3>Knowledge letters</h3>
         <article></article>
         <div>
-          <label for="fullname"
-            >Name<input
-              required
-              id="fullname"
-              type="text"
-              placeholder="Your Name"
-          /></label>
-          <label for="email"
-            >Email<input
-              required
-              id="email"
-              type="email"
-              placeholder="example@domain.com"
-          /></label>
+          <form action="#" method="POST">
+            <label for="fullname"
+              >Name<input
+                required
+                id="fullname"
+                type="text"
+                placeholder="Your Name"
+            /></label>
+            <label for="email"
+              >Email<input
+                required
+                id="email"
+                type="email"
+                placeholder="example@domain.com"
+            /></label>
+          </form>
           <a href="">Subscribe</a>
         </div>
       </section>
@@ -107,12 +111,12 @@
     <section class="footer">
       <footer role="contentinfo">
         <img src="img/logo.svg" alt="acme" />
-        <ul>
+        <ul class="footer-lists">
           <li>Map</li>
           <li><a href="">Blog</a></li>
           <li><a href="">Privacy</a></li>
         </ul>
-        <ul>
+        <ul class="footer-lists">
           <li>Resources</li>
           <li><a href="">Courses</a></li>
           <li><a href="">Hacks</a></li>
@@ -120,15 +124,15 @@
         </ul>
       </footer>
       <div class="misc-info">
-        <p class="copy-right">© 2020 acme. All rights reserved</p>
         <div class="social-icons">
-          <ul>
+          <ul class="misc-lists">
             <li><a href="#">Yt</a></li>
             <li><a href="#">Tw</a></li>
             <li><a href="#">Fb</a></li>
             <li><a href="#">Li</a></li>
           </ul>
         </div>
+        <p class="copy-right">© 2020 acme. All rights reserved</p>
       </div>
     </section>
     <script src="ourApp.js"></script>
