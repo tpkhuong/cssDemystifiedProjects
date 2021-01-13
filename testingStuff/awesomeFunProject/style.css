@@ -179,12 +179,17 @@ select {
   font-size: var(--fs-900);
   color: rgba(218, 55, 196);
 }
+
 .section-title,
 .subtitles {
   font-size: var(--fs-600);
 }
 
-.normal-font-weight {
+.normal-font-weight,
+.primary-title,
+.section-title,
+.subtitles,
+.card-title {
   font-weight: normal;
 }
 
@@ -217,6 +222,15 @@ select {
 
 .blog__post img {
   border-radius: 1em;
+}
+
+.section-title {
+  color: var(--clr-primary-400);
+}
+
+.container {
+  max-width: 50em;
+  padding: 2em;
 }
 
 /* @media screen and (min-width: 40em){
