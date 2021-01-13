@@ -15,8 +15,10 @@
       <div><img src="img/logo.svg" alt="" /></div>
       <nav role="navigation">
         <ul class="header-nav">
-          <li><a href="#">Home</a></li>
-          <li><a class="normal-font-weight" href="#">Blog</a></li>
+          <li class="col-2"><a href="#">Home</a></li>
+          <li class="col-2 align-right">
+            <a class="normal-font-weight" href="#">Blog</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -29,13 +31,13 @@
           Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna.
         </p>
-        <a href="#">Connect</a>
+        <a class="plex-sans" href="#">Connect</a>
       </article>
     </section>
     <main role="main">
       <section role="region" class="about">
         <article>
-          <h2>About</h2>
+          <h2 class="section-title">About</h2>
           <p>
             Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
             eiusmod tempor incididunt ut labore dolore magna sed do amet.
@@ -50,45 +52,61 @@
       </section>
       <section role="region" class="blog">
         <article>
-          <h2>Blog</h2>
-          <h3>Latest thoughts, news and ideas</h3>
+          <h2 class="section-title">Blog</h2>
+          <h3 class="subtitles">Latest thoughts, news and ideas</h3>
           <div class="blog__posts">
             <div class="blog__post">
               <img
                 src="img/blog-1.jpg"
                 alt="Electric driller with a sky and clouds background"
               />
-              <h4>Lorem ipsum dolor sit amet, consectet adipiscing</h4>
-              <p>Lorem ipsum dolor sit amet, consectet adipiscing</p>
-              <p><span>Oct 8</span> - <span>8 min read</span></p>
+              <h4 class="card-title">
+                Lorem ipsum dolor sit amet, consectet adipiscing
+              </h4>
+              <p class="plex-sans">
+                Lorem ipsum dolor sit amet, consectet adipiscing
+              </p>
+              <p class="plex-sans date-read">
+                <span>Oct 8</span> - <span>8 min read</span>
+              </p>
             </div>
             <div class="blog__post">
               <img
                 src="img/blog-2.jpg"
                 alt="plant container with a sky and clouds background"
               />
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectet adipiscing</p>
-              <p><span>Oct 8</span> - <span>8 min read</span></p>
+              <h4 class="card-title">Lorem ipsum</h4>
+              <p class="plex-sans">
+                Lorem ipsum dolor sit amet, consectet adipiscing
+              </p>
+              <p class="plex-sans date-read">
+                <span>Oct 8</span> - <span>8 min read</span>
+              </p>
             </div>
             <div class="blog__post">
               <img
                 src="img/blog-3.jpg"
                 alt="water bottle with a sky and clouds background"
               />
-              <h4>Lorem ipsum dolor sit amet, consectet adipiscing</h4>
-              <p>Lorem ipsum dolor sit amet, consectet adipiscing</p>
-              <p><span>Oct 8</span> - <span>8 min read</span></p>
+              <h4 class="card-title">
+                Lorem ipsum dolor sit amet, consectet adipiscing
+              </h4>
+              <p class="plex-sans">
+                Lorem ipsum dolor sit amet, consectet adipiscing
+              </p>
+              <p class="plex-sans date-read">
+                <span>Oct 8</span> - <span>8 min read</span>
+              </p>
             </div>
           </div>
         </article>
       </section>
       <section role="region" class="cta">
-        <h2>Inbox</h2>
-        <h3>Knowledge letters</h3>
+        <h2 class="section-title">Inbox</h2>
+        <h3 class="subtitles">Knowledge letters</h3>
         <article></article>
         <div>
-          <form action="#" method="POST">
+          <form class="plex-sans" action="#" method="POST">
             <label for="fullname"
               >Name<input
                 required
@@ -104,14 +122,14 @@
                 placeholder="example@domain.com"
             /></label>
           </form>
-          <a href="">Subscribe</a>
+          <a class="plex-sans" href="">Subscribe</a>
         </div>
       </section>
     </main>
     <section class="footer">
       <footer role="contentinfo">
         <img src="img/logo.svg" alt="acme" />
-        <ul class="footer-lists">
+        <ul class="footer-lists plex-sans">
           <li>Map</li>
           <li><a href="">Blog</a></li>
           <li><a href="">Privacy</a></li>
