@@ -1,20 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
 
-/* 
-html { height: 100%; }
-body {
-    min-height:100%; 
-    position:relative; 
-    padding-bottom:[footer-height] 
-}
-.footer { 
-    position: absolute; 
-    left: 0 ; right: 0; bottom: 0; 
-    height:[footer-height] 
-}
-*/
-
 :root {
   --ff-sans: "IBM Plex Sans", sans-serif;
   --ff-serif: "IBM Plex Serif", serif;
@@ -50,6 +36,20 @@ body {
 group the content together. increase the font-weight on the important content we want the user to focus on depends on the section.
 */
 
+/* 
+html { height: 100%; }
+body {
+    min-height:100%; 
+    position:relative; 
+    padding-bottom:[footer-height] 
+}
+.footer { 
+    position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+    height:[footer-height] 
+}
+*/
+
 /* reset */
 
 *,
@@ -58,18 +58,33 @@ group the content together. increase the font-weight on the important content we
   box-sizing: border-box;
 }
 
+html {
+  padding: 0.5rem;
+}
+
 body {
-  font-family: var(--ff-serif);
+  min-height: 100%;
+  font-family: var(--plex-sans, var(--ff-serif));
   font-size: var(--fs-400);
   line-height: 1.5;
+  /* padding: 0.5rem; */
   position: relative;
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+p,
+body {
   margin: 0;
+  /* font-weight: 100; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-fg, var(--clr-neutral-900));
+  font-weight: var(--fw-700);
 }
 
 img {
@@ -80,7 +95,7 @@ img {
 ul[class],
 li[class] {
   list-style: none;
-  padding: 0;
+  /* padding: 0; */
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -122,14 +137,14 @@ select {
 }
 
 .more-space-top {
-  --large-top: calc(var(--bg) * 3);
+  --large-top: calc(var(--br) * 3);
 }
 
 .flow-content-inline > * + * {
-  margin: 0 0 0 var(--gap, var(--bg));
+  margin: 0 0 0 var(--gap, var(--br));
 }
 
-.more-gap {
+.inline-more-gap {
   --gap: calc(var(--br) * 3);
 }
 
@@ -148,6 +163,23 @@ select {
   --fg: var(var(--clr-neutral-500));
 }
 
+.primary-title {
+  font-size: var(--fs-900);
+  color: rgba(218, 55, 196);
+}
+.section-title,
+.subtitles {
+  font-size: var(--fs-600);
+}
+
+.normal-font-weight {
+  font-weight: normal;
+}
+
+.card-title {
+  font-size: var(--fs-500);
+}
+
 .h2 {
   /* use media query to change for desktop size */
   font-size: var(--fs-600);
@@ -156,6 +188,10 @@ select {
 .h3 {
   font-size: var(--fs-300);
 }
+
+/* .plex-sans{
+    font-family: var(--ff-sans);
+} */
 
 .columns {
   display: flex;
@@ -173,5 +209,48 @@ select {
 /* components */
 
 /* individual sections */
+
+/* hero */
+
+[role="banner"] {
+  background-image: url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 15em;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+/* navigation */
+[role="navigation"] {
+  width: 95.7%;
+  position: fixed;
+  bottom: 0.5em;
+  right: 0.45em;
+  /* position: sticky;
+  top: 100%; */
+}
+
+ul.header-nav {
+  --link-fg: var(--clr-primary-300);
+  display: flex;
+  background: var(--clr-neutral-900);
+  /* justify-content: space-between; */
+  margin: 0;
+  font-size: var(--fs-300);
+  padding: 1em;
+  /* width: 100%; */
+}
+
+/* footer section */
+
+.footer {
+  padding: 0 0 3.5em 0;
+}
+
+.misc-lists {
+  display: flex;
+  /* justify-content: space-between; */
+}
 
 /*  */
