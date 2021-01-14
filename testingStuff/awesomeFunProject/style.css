@@ -359,6 +359,37 @@ ul.header-nav {
   font-size: 1.2em;
 }
 
+@media screen and (min-width: 40.625em) {
+  /* header/navigation */
+  [role="navigation"] {
+    position: static;
+    width: auto;
+    margin-left: auto;
+  }
+
+  [role="banner"] > div {
+    display: flex;
+    align-items: center;
+  }
+
+  ul.header-nav {
+    background: none;
+    padding: 0;
+  }
+
+  .header-nav a {
+    color: var(--clr-neutral-900);
+  }
+
+  .align-right {
+    text-align: none;
+  }
+  .header-nav li:first-child {
+    border-right: none;
+    margin: 0 1em 0 0;
+  }
+}
+
 /* footer section */
 
 .footer {
