@@ -23,7 +23,7 @@
       </nav>
     </header>
     <section role="region" class="hero">
-      <article class="container">
+      <article class="container flow-content">
         <h1 class="primary-title">
           Lorem ipsum dolor sit amet, consectet adipiscing
         </h1>
@@ -31,12 +31,12 @@
           Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna.
         </p>
-        <a class="plex-sans" href="#">Connect</a>
+        <a class="plex-sans arrow" href="#">Connect</a>
       </article>
     </section>
     <main role="main">
       <section role="region" class="about">
-        <article class="container">
+        <article class="container flow-content">
           <h2 class="section-title">About</h2>
           <p>
             Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
@@ -55,7 +55,7 @@
           <h2 class="section-title">Blog</h2>
           <h3 class="subtitles">Latest thoughts, news and ideas</h3>
           <div class="blog__posts">
-            <div class="blog__post">
+            <div class="blog__post flow-content">
               <img
                 src="img/blog-1.jpg"
                 alt="Electric driller with a sky and clouds background"
@@ -70,7 +70,7 @@
                 <span>Oct 8</span> - <span>8 min read</span>
               </p>
             </div>
-            <div class="blog__post">
+            <div class="blog__post flow-content">
               <img
                 src="img/blog-2.jpg"
                 alt="plant container with a sky and clouds background"
@@ -83,7 +83,7 @@
                 <span>Oct 8</span> - <span>8 min read</span>
               </p>
             </div>
-            <div class="blog__post">
+            <div class="blog__post flow-content">
               <img
                 src="img/blog-3.jpg"
                 alt="water bottle with a sky and clouds background"
@@ -105,46 +105,43 @@
         <article class="container">
           <h2 class="section-title">Inbox</h2>
           <h3 class="subtitles">Knowledge letters</h3>
-          <div>
-            <form class="plex-sans" action="#" method="POST">
-              <label for="fullname"
-                >Name<input
-                  required
-                  id="fullname"
-                  type="text"
-                  placeholder="Your Name"
-              /></label>
-              <label for="email"
-                >Email<input
-                  required
-                  id="email"
-                  type="email"
-                  placeholder="example@domain.com"
-              /></label>
-            </form>
-            <a class="plex-sans" href="">Subscribe</a>
-          </div>
         </article>
+
+        <div class="cta-bg-img"></div>
+        <form class="plex-sans container" action="#" method="POST">
+          <label for="fullname">Name</label>
+          <input required id="fullname" type="text" placeholder="Your Name" />
+          <label for="email">Email</label>
+          <input
+            required
+            id="email"
+            type="email"
+            placeholder="example@domain.com"
+          />
+          <a class="plex-sans arrow" href="#subscribe">Subscribe</a>
+        </form>
       </section>
     </main>
-    <section class="footer">
-      <footer role="contentinfo" class="container">
-        <img src="img/logo.svg" alt="acme" />
-        <ul class="footer-lists plex-sans">
-          <li>Map</li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Privacy</a></li>
-        </ul>
-        <ul class="footer-lists">
-          <li>Resources</li>
-          <li><a href="">Courses</a></li>
-          <li><a href="">Hacks</a></li>
-          <li><a href="">Free stuff</a></li>
-        </ul>
+    <section class="footer container">
+      <footer role="contentinfo">
+        <div class="footer-links more-space-top">
+          <img src="img/logo.svg" alt="acme" />
+          <ul class="footer-lists plex-sans flow-content">
+            <li>Map</li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Privacy</a></li>
+          </ul>
+          <ul class="footer-lists flow-content">
+            <li>Resources</li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Hacks</a></li>
+            <li><a href="">Free stuff</a></li>
+          </ul>
+        </div>
       </footer>
       <div class="misc-info">
         <div class="social-icons">
-          <ul class="misc-lists">
+          <ul class="misc-lists flow-content-inline">
             <li><a href="#">Yt</a></li>
             <li><a href="#">Tw</a></li>
             <li><a href="#">Fb</a></li>
