@@ -54,7 +54,7 @@
         <article class="container">
           <h2 class="section-title">Blog</h2>
           <h3 class="subtitles">Latest thoughts, news and ideas</h3>
-          <div class="blog__posts">
+          <div class="blog__posts columns">
             <div class="blog__post flow-content">
               <img
                 src="img/blog-1.jpg"
@@ -106,40 +106,46 @@
           <h2 class="section-title">Inbox</h2>
           <h3 class="subtitles">Knowledge letters</h3>
         </article>
-
         <div class="cta-bg-img"></div>
-        <form class="plex-sans container" action="#" method="POST">
-          <label for="fullname">Name</label>
-          <input required id="fullname" type="text" placeholder="Your Name" />
-          <label for="email">Email</label>
-          <input
-            required
-            id="email"
-            type="email"
-            placeholder="example@domain.com"
-          />
+
+        <form class="plex-sans container columns" action="#" method="POST">
+          <div class="label-input">
+            <label for="fullname">Name</label>
+            <input required id="fullname" type="text" placeholder="Your Name" />
+          </div>
+          <div class="label-input">
+            <label for="email">Email</label>
+            <input
+              required
+              id="email"
+              type="email"
+              placeholder="example@domain.com"
+            />
+          </div>
           <a class="plex-sans arrow" href="#subscribe">Subscribe</a>
         </form>
       </section>
     </main>
     <section class="footer container">
       <footer role="contentinfo">
-        <div class="footer-links more-space-top">
-          <img src="img/logo.svg" alt="acme" />
-          <ul class="footer-lists plex-sans flow-content">
-            <li>Map</li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Privacy</a></li>
-          </ul>
-          <ul class="footer-lists flow-content">
-            <li>Resources</li>
-            <li><a href="">Courses</a></li>
-            <li><a href="">Hacks</a></li>
-            <li><a href="">Free stuff</a></li>
-          </ul>
+        <div class="footer-links more-space-top columns">
+          <img class="footer-img" src="img/logo.svg" alt="acme" />
+          <div>
+            <ul class="footer-lists plex-sans flow-content">
+              <li>Map</li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Privacy</a></li>
+            </ul>
+            <ul class="footer-lists flow-content">
+              <li>Resources</li>
+              <li><a href="">Courses</a></li>
+              <li><a href="">Hacks</a></li>
+              <li><a href="">Free stuff</a></li>
+            </ul>
+          </div>
         </div>
       </footer>
-      <div class="misc-info">
+      <div class="misc-info columns">
         <div class="social-icons">
           <ul class="misc-lists flow-content-inline">
             <li><a href="#">Yt</a></li>
