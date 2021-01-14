@@ -230,6 +230,7 @@ select {
 
 .container {
   max-width: 50em;
+  margin: 0 auto;
   /* adding padding first before margins to section element we created good enough space between elements. */
   padding: 2em 1em;
 }
@@ -293,7 +294,7 @@ input {
   flex-flow: column wrap;
 }
 
-.columns > * + * {
+.columns > * {
   flex-basis: 100%;
 }
 
@@ -313,7 +314,7 @@ input {
   text-align: right;
 }
 
-form > *:not(a) {
+.label-input > * {
   display: block;
 }
 
@@ -382,6 +383,7 @@ ul.header-nav {
 
 .footer-links > img {
   margin: 3em 0 0 0;
+  align-self: flex-start;
 }
 
 .misc-lists {
