@@ -423,7 +423,7 @@ ul.header-nav {
     align-self: center;
   }
   .footer-links .footer-img {
-    margin: 1rem 0 0 0;
+    margin: 1.5rem 0 0 0;
     flex-basis: auto;
   }
 
@@ -438,6 +438,10 @@ ul.header-nav {
   .misc-info .copy-right {
     align-self: center;
     margin: 0;
+  }
+
+  .container {
+    padding: 4em 1em;
   }
   /* layout */
   .social-icons {
@@ -462,7 +466,7 @@ ul.header-nav {
 
 .footer-links {
   --large-top: calc(var(--br) * 1.5);
-  --gap-top: calc(var(--br) * 5);
+  /* --gap-top: calc(var(--br) * 5); */
   border-top: 0.1em solid var(--clr-neutral-200);
   border-bottom: 0.1em solid var(--clr-neutral-200);
 }
