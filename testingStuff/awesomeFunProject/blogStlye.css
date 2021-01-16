@@ -1,0 +1,80 @@
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* 
+.social-icons {
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  list-style-type: none; /* remove bullets 
+}
+*** need to use ::before on the <ul> add content: "\200B" so screen readers will read it. ***
+.social-icons::before {
+  content: "\200B"; /* add zero-width space
+}
+*/
+
+/* utilities */
+
+/* general styles */
+
+/* layout */
+
+/* components */
+
+/* individual sections */
+
+/* hero */
+
+[role="banner"] {
+  background-image: url(img/blog.jpg);
+  background-size: cover;
+  background-position: top 50% bottom 50%;
+  height: 35em;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+/* section-nav */
+
+.section-nav {
+  display: none;
+  padding: 0;
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+.section-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section-nav [href="#subscribe"] {
+  flex-basis: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 40.625em) {
+  .section-nav {
+    display: block;
+  }
+}
+
+/* section posts */
+
+section[class="posts"] {
+  margin-top: 3.5rem;
+}
+
+@media screen and (min-width: 40.625em) {
+  section[class="posts"] {
+    margin-top: 0;
+  }
+}
