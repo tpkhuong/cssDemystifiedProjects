@@ -4,44 +4,49 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html" />
     <meta name="author" content="KhuongCorp" />
-    <meta name="description" content="Learning Nodejs" />
+    <meta name="description" content="AwesomeFunProject" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="ourStyle.css" />
+    <link rel="stylesheet" href="ourBlog.css" />
     <title></title>
   </head>
   <body>
     <header role="banner">
       <div>
         <img src="img/logo.svg" alt="" />
-        <h2 id="nav1">Main Navigation</h2>
-        <nav role="navigation" aria-labelledby="nav1">
+        <h2 class="multi-landmark" id="nav1">Main Navigation</h2>
+        <nav role="navigation" class="main-nav" aria-labelledby="nav1">
           <ul class="header-nav">
-            <li class="col-2"><a href="#">Home</a></li>
+            <li class="col-2">
+              <a class="normal-font-weight" href="#">Home</a>
+            </li>
             <li class="col-2 align-right">
-              <a class="normal-font-weight" href="#">Blog</a>
+              <a href="#">Blog</a>
             </li>
           </ul>
         </nav>
       </div>
-      <h1></h1>
+      <div class="container">
+        <h1 class="primary-title top-space">
+          Lorem ipsum dolor sit amet, consectet adipiscing
+        </h1>
+      </div>
     </header>
     <article class="section-nav">
-      <h2 id="nav2">Secondary Navigation</h2>
-      <nav role="navigation" aria-labelledby="nav2">
-        <ul class="secondary-nav">
+      <h2 class="multi-landmark" id="nav2">Secondary Navigation</h2>
+      <nav role="navigation" class="columns" aria-labelledby="nav2">
+        <ul class="secondary-nav col-4">
           <li><a href="#">Design</a></li>
           <li><a href="#">Front-end</a></li>
           <li><a href="#">Back-end</a></li>
           <li><a href="#">Web</a></li>
           <li><a href="#">Apps</a></li>
-          <a
-            class="plex-sans arrow"
-            aria-label="subscribe link"
-            href="#subscribe"
-            >Subscribe</a
-          >
         </ul>
+
+        <a class="plex-sans arrow" aria-label="subscribe link" href="#subscribe"
+          >Subscribe</a
+        >
       </nav>
     </article>
     <main role="main">

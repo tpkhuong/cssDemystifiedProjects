@@ -157,6 +157,9 @@ select {
   margin: 0 0 0 var(--gap, var(--br));
 }
 
+.top-space {
+  margin-top: 3em;
+}
 /* .inline-more-gap > * + *{
   --gap: calc(var(--br) * 3);
 } */
@@ -214,6 +217,10 @@ select {
 
 .h3 {
   font-size: var(--fs-300);
+}
+
+.multi-landmark {
+  display: none;
 }
 
 /* .plex-sans{
@@ -320,6 +327,10 @@ input {
   flex-basis: 75%;
 }
 
+.col-4 {
+  flex-basis: 60%;
+}
+
 .align-right {
   text-align: right;
 }
@@ -417,7 +428,7 @@ ul.header-nav {
   /* hero */
   .primary-title {
     font-size: 3.5rem;
-    margin: 0 0 1em 0;
+    margin-bottom: 1em;
   }
 
   /* general style */
