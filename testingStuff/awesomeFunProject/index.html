@@ -113,7 +113,12 @@
         </article>
         <div class="cta-bg-img"></div>
 
-        <form class="plex-sans container columns" action="#" method="POST">
+        <form
+          role="form"
+          class="plex-sans container columns"
+          action="#"
+          method="POST"
+        >
           <!-- these items will be flex row at desktop size -->
           <div class="label-input">
             <label for="fullname">Name</label>
@@ -138,8 +143,9 @@
       </section>
     </main>
     <footer role="contentinfo">
-      <section class="footer container">
-        <div class="footer-links more-space-top columns">
+      <section role="region" class="footer container">
+        <div class="footer-links top-bottom-lines more-space-top columns">
+          <!-- these items will be flex row at desktop size -->
           <div>
             <img class="footer-img" src="img/logo.svg" alt="acme" />
           </div>
