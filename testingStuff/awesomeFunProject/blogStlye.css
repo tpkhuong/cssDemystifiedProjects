@@ -59,6 +59,10 @@
 
 /* general styles */
 
+.post img {
+  border-radius: 1em;
+}
+
 /* layout */
 
 /* components */
@@ -71,7 +75,7 @@
   background-image: url(img/blog.jpg);
   background-size: cover;
   background-position: top 50% bottom 50%;
-  height: 35em;
+  height: 40em;
   border-radius: 1em;
   padding: 1em;
 }
@@ -80,14 +84,14 @@
 
 .section-nav {
   display: none;
-  padding: 0;
+  padding: 0 1em;
   max-width: 50em;
   margin: 0 auto;
 }
 
 .section-nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .section-nav [href="#subscribe"] {
