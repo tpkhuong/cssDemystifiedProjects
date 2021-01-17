@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="ourStyle.css" />
-    <link rel="stylesheet" href="ourBlog.css" />
-    <title>BlogFlex</title>
+    <link rel="stylesheet" href="ourBlogGrid.css" />
+    <title>BlogGrid</title>
   </head>
   <body>
     <header role="banner">
@@ -55,37 +55,41 @@
       </nav>
     </article>
     <main role="main">
-      <section role="region" class="posts container">
+      <section role="region" class="posts container second-grid-test">
         <!-- two column left column img right content -->
         <!-- the div element below. we are just testing our understanding -->
 
-        <article class="row-1">
-          <div class="post flow-content columns">
+        
+          
             <!-- two col left side img right side content -->
-            <div class="img">
+
+            <div class="row1-col1 post">
               <img
                 src="img/blog-1.jpg"
                 alt="Electric driller with a sky and clouds background"
               />
             </div>
+
             <!-- two col left side img right side content -->
-            <div class="content flow-content">
-              <h4 class="card-title">
+
+            <div class="row1-col2 flow-content">
+              <h4 class="card-title grid-title">
                 Lorem ipsum dolor sit amet, consectet adipiscing
               </h4>
-              <p class="plex-sans">
+              <p class="plex-sans grid-para">
                 Lorem ipsum dolor sit amet, consectet adipiscing
               </p>
-              <p class="plex-sans date-read">
+              <p class="plex-sans date-read grid-date">
                 <span>Oct 8</span> - <span>8 min read</span>
               </p>
             </div>
-          </div>
+          
         </article>
+
         <!-- two columns start-->
 
-        <article class="row-2 columns">
-          <div class="post flow-content floating">
+        
+          <div class="post row2-col1 floating flow-content">
             <img
               src="img/blog-2.jpg"
               alt="Electric driller with a sky and clouds background"
@@ -101,7 +105,7 @@
             </p>
           </div>
 
-          <div class="post flow-content floating">
+          <div class="post row2-col2 floating flow-content">
             <img
               src="img/blog-3.jpg"
               alt="Electric driller with a sky and clouds background"
@@ -116,11 +120,11 @@
               <span>Oct 8</span> - <span>8 min read</span>
             </p>
           </div>
-        </article>
+        
         <!-- two columns end-->
         <!-- three columns start  -->
-        <article class="row-3 columns">
-          <div class="post flow-content floating">
+        
+          <div class="post row3-col1 floating flow-content">
             <img
               src="img/blog-4.jpg"
               alt="Electric driller with a sky and clouds background"
@@ -135,7 +139,7 @@
               <span>Oct 8</span> - <span>8 min read</span>
             </p>
           </div>
-          <div class="post flow-content floating">
+          <div class="post row3-col2 floating flow-content">
             <img
               src="img/blog-5.jpg"
               alt="Electric driller with a sky and clouds background"
@@ -150,7 +154,7 @@
               <span>Oct 8</span> - <span>8 min read</span>
             </p>
           </div>
-          <div class="post flow-content floating">
+          <div class="post row3-col3 floating flow-content">
             <img
               src="img/blog-6.jpg"
               alt="Electric driller with a sky and clouds background"
@@ -165,11 +169,11 @@
               <span>Oct 8</span> - <span>8 min read</span>
             </p>
           </div>
-        </article>
+        
         <!-- three columns end  -->
         <!-- two columns start -->
-        <article class="row-4 columns">
-          <div class="post flow-content floating">
+        
+          <div class="post row4-col1 floating flow-content">
             <img
               src="img/blog-7.jpg"
               alt="Electric driller with a sky and clouds background"
@@ -184,7 +188,7 @@
               <span>Oct 8</span> - <span>8 min read</span>
             </p>
           </div>
-          <div class="post flow-content floating">
+          <div class="post row4-col2 floating flow-content">
             <img
               src="img/blog-8.jpg"
               alt="Electric driller with a sky and clouds background"
@@ -199,7 +203,7 @@
               <span>Oct 8</span> - <span>8 min read</span>
             </p>
           </div>
-        </article>
+        
         <!-- two columns end-->
         <div class="intersection-link top-bottom-lines">
           <a href="">More Stories</a>
@@ -305,3 +309,30 @@
         </nav>
       </div>
  -->
+
+<!-- 
+<article class="row-1">
+          <div class="post flow-content grid-test">
+            <!-- two col left side img right side content 
+
+            <img
+              class="grid-img"
+              src="img/blog-1.jpg"
+              alt="Electric driller with a sky and clouds background"
+            />
+
+            <!-- two col left side img right side content
+
+            <h4 class="card-title grid-title">
+              Lorem ipsum dolor sit amet, consectet adipiscing
+            </h4>
+            <p class="plex-sans grid-para">
+              Lorem ipsum dolor sit amet, consectet adipiscing
+            </p>
+            <p class="plex-sans date-read grid-date">
+              <span>Oct 8</span> - <span>8 min read</span>
+            </p>
+          </div>
+        </article>
+
+  -->
