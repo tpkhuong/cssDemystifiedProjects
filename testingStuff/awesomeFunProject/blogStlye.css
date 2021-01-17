@@ -59,6 +59,11 @@
 
 /* general styles */
 
+.post {
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
 .post img {
   border-radius: 1em;
 }
@@ -72,6 +77,13 @@
 }
 
 /* components */
+
+@media screen and (min-width: 40.625em) {
+  .floating:hover {
+    transition: box-shadow 1s linear;
+    box-shadow: var(--shadow);
+  }
+}
 
 /* individual sections */
 
