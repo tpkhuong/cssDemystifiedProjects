@@ -65,6 +65,12 @@
 
 /* layout */
 
+@media screen and (min-width: 40.625em) {
+  .row-1 .post {
+    align-items: center;
+  }
+}
+
 /* components */
 
 /* individual sections */
@@ -110,9 +116,9 @@ section[class^="posts"],
 section[class^="posts"] > * + * {
   margin-top: 3.5rem;
 }
-section[class^="posts"] > * + * {
+/* section[class^="posts"] > * + * {
   margin-top: 4rem;
-}
+} */
 
 @media screen and (min-width: 40.625em) {
   section[class^="posts"] {
