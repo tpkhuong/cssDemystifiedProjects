@@ -14,7 +14,12 @@
   <body>
     <header role="banner">
       <div>
-        <img src="img/logo.svg" alt="" />
+        <div class="testing">
+          <img src="img/logo.svg" alt="" />
+          <a class="plex-sans arrow" aria-label="back link" href="#back"
+            >Back</a
+          >
+        </div>
         <h2 class="multi-landmark" id="nav1">Main Navigation</h2>
         <nav role="navigation" class="main-nav" aria-labelledby="nav1">
           <ul class="header-nav">
@@ -37,11 +42,11 @@
       <h2 class="multi-landmark" id="nav2">Secondary Navigation</h2>
       <nav role="navigation" class="columns" aria-labelledby="nav2">
         <ul class="secondary-nav col-4">
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Front-end</a></li>
-          <li><a href="#">Back-end</a></li>
-          <li><a href="#">Web</a></li>
-          <li><a href="#">Apps</a></li>
+          <li><a class="normal-font-weight" href="#">Design</a></li>
+          <li><a class="normal-font-weight" href="#">Front-end</a></li>
+          <li><a class="normal-font-weight" href="#">Back-end</a></li>
+          <li><a class="normal-font-weight" href="#">Web</a></li>
+          <li><a class="normal-font-weight" href="#">Apps</a></li>
         </ul>
 
         <a class="plex-sans arrow" aria-label="subscribe link" href="#subscribe"
@@ -50,21 +55,32 @@
       </nav>
     </article>
     <main role="main">
-      <section role="region" class="posts flow-content container">
-        <div class="post flow-content">
-          <img
-            src="img/blog-1.jpg"
-            alt="Electric driller with a sky and clouds background"
-          />
-          <h4 class="card-title">
-            Lorem ipsum dolor sit amet, consectet adipiscing
-          </h4>
-          <p class="plex-sans">
-            Lorem ipsum dolor sit amet, consectet adipiscing
-          </p>
-          <p class="plex-sans date-read">
-            <span>Oct 8</span> - <span>8 min read</span>
-          </p>
+      <section role="region" class="posts columns container">
+        <!-- two column left column img right content -->
+        <!-- the div element below. we are just testing our understanding -->
+        <div class="testing">
+          <div class="post flow-content">
+            <!-- two col left side img right side content -->
+            <div class="testing">
+              <img
+                src="img/blog-1.jpg"
+                alt="Electric driller with a sky and clouds background"
+              />
+            </div>
+            <!-- two col left side img right side content -->
+            <div class="testing">
+              <h4 class="card-title">
+                Lorem ipsum dolor sit amet, consectet adipiscing
+              </h4>
+              <p class="plex-sans">
+                Lorem ipsum dolor sit amet, consectet adipiscing
+              </p>
+              <p class="plex-sans date-read">
+                <span>Oct 8</span> - <span>8 min read</span>
+              </p>
+            </div>
+          </div>
+          <!-- two columns -->
         </div>
         <div class="post flow-content">
           <img
@@ -81,6 +97,7 @@
             <span>Oct 8</span> - <span>8 min read</span>
           </p>
         </div>
+
         <div class="post flow-content">
           <img
             src="img/blog-3.jpg"
@@ -251,3 +268,27 @@
     <script src="ourBlog.js"></script>
   </body>
 </html>
+
+<!-- 
+
+  *** for story html ***
+  <div>
+        <div class="testing"> use flex-basis: 15%
+          <img src="img/logo.svg" alt="" />
+          <a class="plex-sans arrow" aria-label="back link" href="#back"
+            >Back</a
+          >
+        </div>
+        <h2 class="multi-landmark" id="nav1">Main Navigation</h2>
+        <nav role="navigation" class="main-nav" aria-labelledby="nav1">
+          <ul class="header-nav">
+            <li class="col-2">
+              <a class="normal-font-weight" href="#">Home</a>
+            </li>
+            <li class="col-2 align-right">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+ -->
