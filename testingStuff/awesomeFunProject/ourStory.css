@@ -1,0 +1,70 @@
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* 
+.social-icons {
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  list-style-type: none; /* remove bullets 
+}
+*** need to use ::before on the <ul> add content: "\200B" so screen readers will read it. ***
+.social-icons::before {
+  content: "\200B"; /* add zero-width space
+}
+*/
+
+/* utilities */
+
+/* general styles */
+
+/* layout */
+
+/* components */
+
+/* individual sections */
+
+/* hero */
+
+[role="banner"] {
+  background-image: url(img/article.jpg);
+  background-size: cover;
+  background-position: top 50% bottom 50%;
+  height: 40em;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.back-arrow {
+  display: none;
+}
+
+.back-arrow::before {
+  content: "<";
+  margin: 0 0.5em 0 0;
+}
+
+@media screen and (min-width: 40.625em) {
+  .back-arrow {
+    display: block;
+    margin: 0 0 0 1.5em;
+    /* use transform translate to align the back link with the acme image. we used display flex on this container that hold the acme img and back link 
+    
+    */
+    transform: translateY(-0.1em);
+  }
+}
+
+/* section[class^="posts"] > * + * {
+  margin-top: 4rem;
+} */
+
+/* intersection-link */
