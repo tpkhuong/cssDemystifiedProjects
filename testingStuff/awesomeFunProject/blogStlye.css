@@ -59,11 +59,6 @@
 
 /* general styles */
 
-.post {
-  border-radius: 1em;
-  padding: 0.5em;
-}
-
 .post img {
   border-radius: 1em;
 }
@@ -71,6 +66,10 @@
 /* layout */
 
 @media screen and (min-width: 40.625em) {
+  .post {
+    border-radius: 1em;
+    padding: 1em;
+  }
   .row-1 .post {
     align-items: center;
   }
@@ -120,6 +119,9 @@
   .section-nav {
     display: block;
   }
+  .columns > * + * {
+    margin: 0 0 0 calc(var(--br) * 1);
+  }
 }
 
 /* section posts */
@@ -135,6 +137,9 @@ section[class^="posts"] > * + * {
 @media screen and (min-width: 40.625em) {
   section[class^="posts"] {
     margin-top: 0;
+  }
+  section[class^="posts"] > * + * {
+    margin-top: 1.5rem;
   }
 }
 
